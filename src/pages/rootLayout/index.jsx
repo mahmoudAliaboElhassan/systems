@@ -4,7 +4,7 @@ import Header from "../../components/Header";
 
 function RootLayout() {
   return (
-    <div>
+    <div style={{ backgroundColor: "rgba(12, 14, 18, 1)" }}>
       <Header />
       <Outlet />
     </div>
