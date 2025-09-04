@@ -116,14 +116,14 @@ function Login() {
 
               {/* Options row */}
               <div className="flex items-center justify-between text-sm">
-                <div className="flex items-center jsutify-start">
+                <div className="flex items-center justify-between space-x-2">
                   <input
                     type="checkbox"
                     id="remember"
                     name="remember"
                     checked={formData.remember}
                     onChange={handleInputChange}
-                    className="w-full px-2 py-2  border border-white/20 rounded-lg text-white placeholder-white/50 backdrop-blur-sm focus:outline-none focus:border-white/50 focus:bg-white/15 focus:ring-4 focus:ring-white/10 transition-all duration-300 group-hover:scale-105"
+                    className="px-2 py-2  border border-white/20 rounded-lg text-white placeholder-white/50 backdrop-blur-sm focus:outline-none focus:border-white/50 focus:bg-white/15 focus:ring-4 focus:ring-white/10 transition-all duration-300 group-hover:scale-105"
                   />
                   <label
                     htmlFor="remember"
