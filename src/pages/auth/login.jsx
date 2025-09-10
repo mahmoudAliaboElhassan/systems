@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link, useNavigate } from "react-router-dom";
 
 function Login() {
   const [formData, setFormData] = useState({
@@ -36,12 +37,6 @@ function Login() {
     );
   };
 
-  const handleForgotPassword = () => {
-    alert(
-      "Forgot password clicked! This would normally open a password reset form."
-    );
-  };
-
   const handleGetTrial = () => {
     alert(
       "Get trial clicked! This would normally redirect to the signup page."
@@ -50,8 +45,6 @@ function Login() {
 
   return (
     <div className="relative overflow-hidden">
-      {/* Animated background elements */}
-
       {/* Main content */}
       <div className="relative z-10 flex items-center justify-center  p-4">
         <div className="w-full max-w-md">
@@ -132,11 +125,8 @@ function Login() {
                     Remember for 30 days
                   </label>
                 </div>
-                <button
-                  onClick={handleForgotPassword}
-                  className="text-[rgba(148,151,156,1)] hover:text-white transition-colors duration-200 underline-offset-4 hover:underline"
-                >
-                  Forgot password
+                <button className="text-[rgba(148,151,156,1)] hover:text-white transition-colors duration-200 underline-offset-4 hover:underline">
+                  <Link to="/forget-password">Forgot password</Link>
                 </button>
               </div>
 
